@@ -1,0 +1,11 @@
+<div class="title">Pong Game</div>
+<div class="body">
+<p><a href="media/pong.swf" target="_blank">Link to SWF</a></p>
+<p>This pong game was the first Flash game I created, and represents my first experimentation with the application of trigonometry to game development.</p>
+<p>It uses sine and cosine functions in conjuction with an "angle" variable in radiians to calculate the movement of the ball. When the ball strikes the walls or a paddle, the angle is either multiplied by -1 or subtracted from pi, depending on which direction the ball must bounce.</p>
+<p>Some snippets of relevant code are shown below:</p>
+<p><img src="media/code_3.png" /><br />A random angle is chosen in radians by multiplying a random number between 0 and 1 by 2pi.</p>
+<p><img src="media/code_1.png" /><br />To calculate the new position of the ball during each frame, sine and cosine are used. When you visualize the two movements that are occuring here, it forms a right trangle, with the hypotenuse going between the current poisition and the final position, and two legs, one vertical and horizontal. The vertical leg, or y axis, is opposite the current position, much like how the sine uses the opposite side. Thus, sine is used to calculate the y movement and cosine is used to calculate the x movement. (Note that in Flash, the y value increases as you move down, not up.)</p>
+<p><img src="media/code_2.png" /><br />This code is used to calculate the location where a traveling ball will hit the computer's side. Lines 149 to 152 are used to find a coterminal angle between 0 and 2pi. Lines 153 to 160 are used to determine which quadrant the angle is in, and so which direction the ball is heading. Line 161 uses the tangent function, along with the angle and the distance the ball is from the wall (one leg) to find the spot along the wall it will strike (another leg).</p>
+<p>Game development in the real world also makes use of trigonometry in a similar fashion, using sine and cosine to calculate the trajectory of objects.</p>
+</div>

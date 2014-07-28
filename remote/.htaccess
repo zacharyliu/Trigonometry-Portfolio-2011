@@ -1,0 +1,3 @@
+ExpiresActive On
+ExpiresDefault A0
+Header append Cache-Control must-revalidate
